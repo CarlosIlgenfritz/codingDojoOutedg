@@ -14,6 +14,8 @@ public class CaixaEletronicoTest {
         Faker faker = new Faker();
         BigDecimal quantidadeDeNotas = BigDecimal.valueOf(faker.number().randomDigit());
         CaixaEletronico caixaEletronico = new CaixaEletronico(quantidadeDeNotas);
+
+        assertEquals(quantidadeDeNotas, caixaEletronico.getQuantidadeDeNotas());
     }
 
     @Test
