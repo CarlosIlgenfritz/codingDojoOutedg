@@ -8,8 +8,10 @@ import java.math.BigDecimal;
 public class CaixaEletronico {
 
     private BigDecimal quantidadeDeNotas;
+    private BigDecimal valorDaNota;
 
-    public CaixaEletronico(BigDecimal deNotas, BigDecimal quantidadeDeNotas) {
+    public CaixaEletronico(BigDecimal deNotas, BigDecimal valorDaNota) {
     	this.quantidadeDeNotas = quantidadeDeNotas;
+    	this.valorDaNota = valorDaNota;
     }
 }

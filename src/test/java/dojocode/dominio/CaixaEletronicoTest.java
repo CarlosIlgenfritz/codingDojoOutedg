@@ -27,10 +27,16 @@ public class CaixaEletronicoTest {
     }
 
     @Test
-    void deve_criar_um_caixa_eletronico_com_valor_a_ser_sacado() {
-        BigDecimal valorASerSacado = BigDecimal.valueOf(faker.number().randomDigitNotZero());
+    void deve_criar_um_caixa_eletronico_com_valor_da_nota() {
+        BigDecimal valorDaNota = BigDecimal.valueOf(faker.number().randomDigitNotZero());
 
-        CaixaEletronico caixaEletronico = new CaixaEletronico(quantidadeDeNotas, valorASerSacado);
+        CaixaEletronico caixaEletronico = new CaixaEletronico(quantidadeDeNotas, valorDaNota);
+
+        assertEquals(caixaEletronico.getValorDaNota(), valorDaNota);
+    }
+
+    @Test
+    void deve_fornecer_a_menor_quantidade_de_notas_possiveis() {
 
         assertEquals();
     }
