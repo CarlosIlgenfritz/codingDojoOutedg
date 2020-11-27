@@ -24,6 +24,6 @@ public class CaixaEletronicoTest {
     void deve_poder_criar_um_caixa_eletronico(){
         caixaEletronico = new CaixaEletronico(quantidadeDeNotas, valorASerRetirado);
 
-        
+
     }
 }
