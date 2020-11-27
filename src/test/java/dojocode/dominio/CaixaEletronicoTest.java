@@ -13,17 +13,14 @@ public class CaixaEletronicoTest {
     void deve_criar_um_caixa_eletronico() {
         Faker faker = new Faker();
         BigDecimal quantidadeDeNotas = BigDecimal.valueOf(faker.number().randomDigit());
+        
         CaixaEletronico caixaEletronico = new CaixaEletronico(quantidadeDeNotas);
 
         assertEquals(quantidadeDeNotas, caixaEletronico.getQuantidadeDeNotas());
     }
-
+    
     @Test
-    void deve_conter_quantidade_de_notas() {
-        Faker faker = new Faker();
-        BigDecimal quantidadeDeNotas = BigDecimal.valueOf(faker.number().randomDigit());
-        CaixaEletronico caixaEletronico = new CaixaEletronico(quantidadeDeNotas);
-
-        assertEquals(caixaEletronico.getQuantidadeDeNotas(), quantidadeDeNotas);
+    void deve_criar_um_caixa_eletronico_com_valor_a_ser_sacado() {
+    	
     }
 }
