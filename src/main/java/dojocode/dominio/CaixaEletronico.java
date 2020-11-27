@@ -9,7 +9,7 @@ public class CaixaEletronico {
 
     private BigDecimal quantidadeDeNotas;
 
-    public CaixaEletronico(BigDecimal quantidadeDeNotas) {
+    public CaixaEletronico(BigDecimal deNotas, BigDecimal quantidadeDeNotas) {
     	this.quantidadeDeNotas = quantidadeDeNotas;
     }
 }
